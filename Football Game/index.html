@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+       <center><h1>Penalty Shoot-Out</h1></center>
+
+        <div class="row">
+            <div class="col">
+                <img
+                    src="./Assests/real.gif"alt="" class="profile-icon"height="135px"   width="135px" />
+                
+                <span class="name" id="team-1-name"></span>
+                <div class="row round-runs" id="team-1-round-runs">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row score">
+                    <span id="team-1-score"></span>
+                    <span>-</span>
+                    <span id="team-2-score"></span>
+                </div>
+            </div>
+            <div class="col">
+                <img src="./Assests/Heusca.png" alt="" class="profile-icon" height="135px"  width="135px"  />
+       
+                <span class="name" id="team-2-name"></span>
+                <div class="row round-runs" id="team-2-round-runs">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="row score">
+                <button  id="strike-button1"class="col" onclick="sampleFunction()">Try Again</button>
+                <button id="strike-button" class="col" id="strike-button"
+                    onclick="handleStrikeButtonClick()"></button>
+            </div>
+        </div>
+        <div class="row" id="result" hidden></div>
+    </div>
+</body>
+
+</html>
